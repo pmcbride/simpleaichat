@@ -251,6 +251,7 @@ class AIChat(BaseModel):
                     "role",
                     "content",
                     "received_at",
+                    "finish_reason",
                     "prompt_length",
                     "completion_length",
                     "total_length",
