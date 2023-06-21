@@ -7,3 +7,5 @@ __pycache__/
 simpleaichat.egg-info/
 dist/
 build/
+
+venv*/

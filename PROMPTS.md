@@ -33,7 +33,7 @@ Invoking a tool invokes two separate API calls: one to select which tool which t
 
 ### Call #1
 
-Before returning an API response, the `system` prompt is temporairly replaced with:
+Before returning an API response, the `system` prompt is temporarily replaced with:
 
 ```txt
 From the list of tools below:
