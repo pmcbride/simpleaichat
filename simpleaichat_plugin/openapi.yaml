@@ -1,0 +1,35 @@
+openapi: 3.0.1
+info:
+  title: SimpleAIChat Plugin
+  description: A plugin that uses the SimpleAIChat Python package to generate responses.
+  version: 'v1'
+servers:
+  - url: http://localhost:5000
+paths:
+  /chat:
+    post:
+      operationId: chat
+      summary: Generate a response using the SimpleAIChat Python package.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                query:
+                  type: string
+                  description: The query to generate a response for.
+              required:
+                - query
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    description: The generated response.
